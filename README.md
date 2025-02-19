@@ -1,6 +1,9 @@
 # SilverStripe LeafletField module
 
-Provides a form field type allowing users to draw features on a map, the features are stored as geoJSON objects in a single database field.
+`benmanu/silverstripe-leafletfield` Provides a form field type allowing users to draw features on a map, the features are stored as geoJSON objects in a single database field.
+
+This module extends that functionality with "Google Mutant" extensions for leaflet.js
+The difference is only in the front-end javascript that is imported & configured.
 
 
 ## Installation
@@ -12,7 +15,7 @@ Provides a form field type allowing users to draw features on a map, the feature
 
 Import the field
 
-    use NZTA\LeafletField\LeafletField;
+    use NZTA\LeafletField\Forms\LeafletField;
 
 Create a text database field to store the geojson value.
 
@@ -83,6 +86,7 @@ The draw options are set using the same structure as [Leaflet.draw options](http
 * SilverStripe 4.0
 
 ## Project Links
+* [Ben Manu's Silverstripe CMS LeafletField](https://github.com/benmanu/silverstripe-leafletfield)
 * [GitHub Project Page](https://github.com/NZTA/silverstripe-leafletfield)
 * [Issue Tracker](https://github.com/NZTA/silverstripe-leafletfield/issues)
 * [Leaflet](http://leafletjs.com/)

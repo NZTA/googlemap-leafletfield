@@ -19,8 +19,7 @@
         }
     ],
     "require": {
-        "silverstripe/vendor-plugin": "^1.0",
-        "silverstripe/cms": "^4.0"
+        "benmanu/silverstripe-leafletfield": "^2 | ^3"
     },
     "autoload": {
         "psr-4": {
@@ -28,9 +27,13 @@
         }
     },
     "extra": {
-        "installer-name": "leafletfield",
         "expose": [
             "client"
         ]
-    }
+    },
+    "abandoned": "benmanu/silverstripe-leafletfield",
+    "_comment": [
+        "This package alters the front-end requirements (via the Silverstripe Requirements class) only",
+        "Use benmanu/silverstripe-leafletfield directly since a hook was added to do this via Extension in 2025"
+    ]
 }
